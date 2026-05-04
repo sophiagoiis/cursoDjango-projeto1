@@ -1,0 +1,14 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+
+#HTTP REQUEST
+def home(request):
+    return HttpResponse("Olá, esse é o início :)")
+
+def sobre(request):
+    return HttpResponse("Oi, eu sou Sophia!!")
+
+def contato(request):
+    return HttpResponse("Entre em contato comigo!!")
