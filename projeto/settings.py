@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #AQUI A GENTE BOTA TODOS OS APPS QUE CRIARMOS
+    'receitas',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +56,8 @@ ROOT_URLCONF = 'projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / 'base/templates' ], #AQUI A GENTE FALA ONDE VÃO FICAR OS NOSSOS TEMPLATES
+        #BASE_DIR / RECEITAS / TEMPLATES_EXEMPLO,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

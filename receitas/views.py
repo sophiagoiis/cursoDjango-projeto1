@@ -5,10 +5,13 @@ from django.http import HttpResponse
 
 #HTTP REQUEST
 def home(request):
-    return HttpResponse("Olá, esse é o início :)")
+    return render(request, 'receitas/home.html', context={
+        'name': 'Sophia Maria',
+        'age': 19,
+    })
 
 def sobre(request):
-    return HttpResponse("Oi, eu sou Sophia!!")
+    return render(request, 'receitas/sobre.html')
 
 def contato(request):
-    return HttpResponse("Entre em contato comigo!!")
+    return render(request, 'receitas/contato.html')
