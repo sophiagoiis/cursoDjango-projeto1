@@ -10,8 +10,3 @@ def home(request):
         'age': 19,
     })
 
-def sobre(request):
-    return render(request, 'receitas/sobre.html')
-
-def contato(request):
-    return render(request, 'receitas/contato.html')
