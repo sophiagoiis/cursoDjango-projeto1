@@ -1,24 +1,14 @@
-{% include 'receitas/partials/head.html' %}
+{% extends 'base_templates/global/base.html' %}
 
-<body>
-    {% include 'receitas/partials/header.html' %}
-    {% include 'receitas/partials/search.html' %}
+</head>
 
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-            {% include 'receitas/partials/receita.html' %}
-        </div>
-    </main>
+{% block title %} Home {% endblock title %}
 
-    {% include 'receitas/partials/footer.html' %}
-</body>
+{% block content%}
+<div class="main-content main-content-list container">
+    {% for receita in receitas %}
+        {% include 'receitas/partials/receita.html' %}
+    {% endfor %}
+</div>
+{% endblock %}
 
-</html>
