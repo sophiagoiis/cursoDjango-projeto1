@@ -56,7 +56,7 @@ ROOT_URLCONF = 'projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'base/templates' ], #AQUI A GENTE FALA ONDE VÃO FICAR OS NOSSOS TEMPLATES
+        'DIRS': [ BASE_DIR ], #AQUI A GENTE FALA ONDE VÃO FICAR OS NOSSOS TEMPLATES
         #BASE_DIR / RECEITAS / TEMPLATES_EXEMPLO,
         'APP_DIRS': True,
         'OPTIONS': {

@@ -6,7 +6,7 @@ from receitas import views
 app_name = 'receitas'
 
 urlpatterns = [
-    path('', views.home, name = "receitas-home"), #boto o nome do caminho e dps a função que vai ser chamada quando o usuário acessar esse caminho
-    path('receitas/<int:id>/', views.receita, name = "receitas-receita"),
+    path('', views.home, name = "home"),
+    path('receitas/<int:id>/', views.receita, name = "receita"),
 ]
 
